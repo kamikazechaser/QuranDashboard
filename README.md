@@ -23,6 +23,15 @@ To-do:
 - Publish to Chrome Web Store
 - Fix bugs (See "Issues" tab)
 
+Installation:
+
+- Clone this repo
+- Go to Chrome Extensions `chrome://extensions/`
+- Enable Developer mode
+- Load unpacked extension
+- Select the cloned repo directory
+- Open a new tab
+
 Contribution:
 
 Fork the repository and submit a pull request for whatever change you want to be added to this project. Use the "src" folder as it contains the core files. If you have any questions, just open an issue.
