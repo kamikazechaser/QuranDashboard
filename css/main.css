@@ -1,0 +1,148 @@
+/*
+ * Quran Quotes Dashboard Chrome App 
+ *
+ * Mohammed Sohail <sohailsameja@gmail.com>
+ *
+ * Released Under AGPL-v3 License
+ *
+ */
+@font-face {
+  font-family: 'Lateef';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lateef'), url(https://fonts.gstatic.com/s/lateef/v10/_hjeHDsHwaiVMYwxvpdBwvesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+FB50-FDFF, U+FE80-FEFC;
+}
+
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oxygen'), local('Oxygen-Regular'), url(https://fonts.gstatic.com/s/oxygen/v5/LC4u_jU27qpsdszDEgeU_3-_kf6ByYO6CLYdB4HQE-Y.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oxygen'), local('Oxygen-Regular'), url(https://fonts.gstatic.com/s/oxygen/v5/qBSyz106i5ud7wkBU-FrPevvDin1pK8aKteLpeZ5c0A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: 'Slabo 27px';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Slabo 27px'), local('Slabo27px-Regular'), url(https://fonts.gstatic.com/s/slabo27px/v3/LfR9_S_HMdQ73mwIHBRxoSEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Slabo 27px';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Slabo 27px'), local('Slabo27px-Regular'), url(https://fonts.gstatic.com/s/slabo27px/v3/PuwvqkdbcqU-fCZ9Ed-b7fk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+html,
+body {
+    height: 100%;
+}
+body {
+    font-weight: 300;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+	position: relative;
+	margin: 0;
+    background-image: url('/assets/background.jpg'); 
+    opacity: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: default;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+	transition-duration: .2s;
+	transition-property: background-color, color;
+}
+
+.m-clock {
+    color: white;
+	font-size: 10em;
+	text-rendering: geometricPrecision;
+    font-family: 'Oxygen', sans-serif;
+	transition: background 0.4s ease;
+	text-align: center;
+    line-height: 1;
+}
+
+.minutes {   
+	position: relative;
+    font-family: 'Oxygen', sans-serif;
+	left: -30px;
+	text-align: center;
+}
+
+.m-date {
+    color: white;    
+	position: relative;
+    font-family: 'Oxygen', sans-serif;
+	left: -15px;    
+	bottom: -5px;
+	width: 100%;
+	font-size: 1.75rem;
+	font-weight: 200;
+	text-align: center;
+}
+
+.m-hijridate {
+    color: white;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 20px;
+	position: relative;
+	left: -15px;    
+	bottom: -5px;
+	width: 100%;
+	font-size: 1.75rem;
+	font-weight: 200;
+	text-align: center;
+}
+
+#result {
+    color: white;
+    font-family: 'Slabo 27px', serif;
+	position: absolute;   
+	bottom: 45px;
+	width: 100%;
+	font-size: 1.0rem;
+	font-weight: 200;
+	text-align: center;
+}
+
+#arabic {
+    color: white;
+    font-family: 'Lateef', cursive;
+	position: absolute;   
+	bottom: 100px;
+	width: 100%;
+	font-size: xx-large;
+	text-align: center;
+}
+
+#info {
+    color: white;
+    font-family: 'Oxygen', sans-serif;
+	position: absolute;   
+	bottom: 25px;
+	width: 100%;
+	font-size: 0.8rem;
+	font-weight: 200;
+	text-align: center;
+}
