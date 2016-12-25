@@ -2,7 +2,7 @@
 
 A Minimal Chrome App That Is A Drop In Replacement For Momentum Dash.
 
-![Screenshot](screenshot.png?raw=true "Screenshot")
+<img src=http://i.imgur.com/d3Lp5DWg.png>
 
 It displays:
 
