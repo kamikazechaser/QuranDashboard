@@ -1,6 +1,6 @@
 {
    "manifest_version":2,
-   "name":"Quran Quotes Dashboard",
+   "name":"Quran Dashboard",
    "version":"2.0.0",
    "offline_enabled":true,
    "description":"Display Quotes And Extractions From The Quran And Provide A Neat Dashboard",
