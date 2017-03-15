@@ -7,14 +7,23 @@
  *
  */
 var locale = 'en-EN';
+
 var clock = {
 	hours: document.querySelector('.m-clock .hours').firstChild,
 	minutes: document.querySelector('.m-clock .minutes').firstChild,
 	date: document.querySelector('.m-date').firstChild,
-    hijridate: document.querySelector('.m-hijridate').firstChild
+  hijridate: document.querySelector('.m-hijridate').firstChild
 };
 render();
 HijriRender();
+
+$.getJSON('../src/js/data.json', {get_param: 'value'}, function(json) {
+    var index = Math.floor(Math.random() * 24);
+    console.log(index)
+    $('body').append($(document.createElement('quote')).text(json[index].quote))
+    $('body').append($(document.createElement('by')).text(json[index].by))
+})
+
 
 function padZero(number) {
 	var str = number.toString();

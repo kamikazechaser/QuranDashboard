@@ -58,7 +58,7 @@ body {
     background-size: cover;    
 	position: relative;
 	margin: 0;
-    background-image: url('/assets/background.jpg'); 
+    background-image: url('/assets/background.jpg');
     opacity: 1.5;
     display: flex;
     justify-content: center;
@@ -83,11 +83,31 @@ body {
     line-height: 1;
 }
 
+quote {
+    color: white;
+	font-size: 16px;
+	text-align: center;
+	position: absolute;   
+	top: 25px;    
+}
+
+by {
+    color: white;
+	font-size: 13px;
+	text-align: center;
+	position: absolute;   
+	top: 50px;
+}
+
 .minutes {   
 	position: relative;
     font-family: 'Oxygen', sans-serif;
 	left: -30px;
 	text-align: center;
+}
+
+.text {   
+	position: relative;
 }
 
 .m-date {
@@ -146,3 +166,4 @@ body {
 	font-weight: 200;
 	text-align: center;
 }
+
